@@ -9,6 +9,9 @@ DING_HOOK_URL='https://oapi.dingtalk.com/robot/send?access_token=dada0742bba6f31
 DING_HOOK_TEST_URL='https://oapi.dingtalk.com/robot/send?access_token=e7b8419c488934cdd6b8234321f112af423423432423432432424347c94fc29f0a7474899bc32b1f3a48c003c2f'
 #DING_TEMPLATE="{ \"msgtype\": \"markdown\", \"markdown\": { \"title\": \"prometheus alert\", \"text\": '![](https://cdnimg.lolseatour.com/warningok.png)\n ### 告警名称: ${alert_name}\n ### 告警类型: ${alert_type}\n ### 告警主机: ${alert_host}\n ### 告警摘要:\nSupervior-alert \n ### 告警详情:\n ${alert_details}\n ### [点击详情]( @18916612261)' }, \"at\": { \"atMobiles\": [ \"18916612261\" ], \"isAtAll\": false } }"
 
+test -d ${LOG_DIR} || mkdir -p ${LOG_DIR}
+
+
 echo  "READY"
 
 while read line
