@@ -1,4 +1,4 @@
-# supervisor
+# supervisor alert  to  dingding  shell 
 supervisor alert to dingding  
 supervisor 钉钉告警插件，捕获托管的服务的异常退出，然后将信息发送给钉钉；
 
