@@ -2,6 +2,8 @@
 supervisor alert to dingding  
 supervisor 钉钉告警插件，捕获托管的服务的异常退出，然后将信息发送给钉钉；
 
+注：实现了supervisor托管的服务异常退出后，将告警通过钉钉钩子发送到钉钉的功能，当然可以调用supervisor提供的几乎所有事件。本代码只是实现功能，对于代码的健壮性有待优化；
+
 
 1、在supervisor的配置文件添加事件监控项；
 
