@@ -8,7 +8,6 @@ supervisor 钉钉告警插件，捕获托管的服务的异常退出，然后将
 1、在supervisor的配置文件添加事件监控项；
 
 [eventlistener:all_alert_to_ding]
-
 command=sh -c /opt/scripts/supervior_alert_to_ding.sh
 events=PROCESS_STATE_EXITED
 user=root
